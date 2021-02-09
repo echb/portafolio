@@ -20,7 +20,7 @@ main{
 }
 h1, h2{
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -47,7 +47,7 @@ padding: 50px 100px;
     font-weight: 700;
 }
 .tag__name{
-    font-weight: 700;
+    font-weight: 900;
 }
 .section-background, .section-projects, .section-skills{
     padding: 50px;
@@ -70,6 +70,7 @@ padding: 50px 100px;
     font-weight: 700;
     letter-spacing: 2px;
     padding-left: 50px;
+    font-size: 1.3rem;
 }
 
 .skills__content, .background__content, .projects__content{
@@ -119,7 +120,7 @@ font-size: .9rem;
     font-weight: 600;
     padding: 5px;
     border: solid 2px;
-    border-color: #21aedd;
+    border-color: #007bff;
     border-radius: 10%;
 }
 .caption__link{
@@ -130,7 +131,7 @@ font-size: .9rem;
     font-weight: 900;
     text-transform: capitalize;
     font-size: 1.1rem;
-    line-height: 2.5;
+    margin-bottom: 10px;
 }
 .project1__img{
     padding-right: 20px;
@@ -141,10 +142,26 @@ footer{
     padding: 50px 80px;
     float: right;
 }
-.foot__list{
+.foot__mobile{
+    display: none;
+}
+.mobile__social, .desktop__social{
     display: flex;
     width: 200px;
     justify-content: space-evenly;
+}
+.social{
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #007bff;
+    text-decoration: none;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+.social__svg{
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -191,8 +208,17 @@ footer{
         width: 100%;
     }
     footer{
-        flex-direction: column-reverse;
-        align-items: center;
+        float: none;
+    }
+    .foot__mobile{
+        display: initial;
+    }
+    .mobile__social{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .foot__desktop{
+        display: none;
     }
 }
 @media screen and ( max-width: 535px){
