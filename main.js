@@ -1,9 +1,9 @@
-ScrollReveal().reveal('body', { delay: 50, easing: 'ease-out' });
+ScrollReveal().reveal('body', { delay: 550, easing: 'ease-out' });
 ScrollReveal().reveal('.section-background', { delay: 550, easing: 'ease-out' });
-ScrollReveal().reveal('.section-skills', { delay: 50, easing: 'ease-out' });
-ScrollReveal().reveal('.section-projects', { delay: 50, easing: 'ease-out' });
-ScrollReveal().reveal('.project1', { delay: 50, easing: 'ease-out' });
-
+ScrollReveal().reveal('.section-skills', { delay: 150, easing: 'ease-out' });
+ScrollReveal().reveal('.section-projects', { delay: 150, easing: 'ease-out' });
+ScrollReveal().reveal('.project1', { delay: 100, easing: 'ease-out' });
+ 
 
 
 const button = document.querySelector('.button')
@@ -20,4 +20,3 @@ button.addEventListener('click', () => {
     console.log(mobeButton.classList.toggle('active-2'));
     console.log(move.classList.toggle('move'));
 })
-// 
